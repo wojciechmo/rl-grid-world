@@ -1,8 +1,10 @@
 # Grid world
 
+Compare Q-Learning and Expected Value SARSA.
+
 Goal is to find the best policy of taking actions in grid world in order to receive the biggest possible reward. Agent does not have any prior knowledge about environment. Assumption of deterministic environment, stochasticity is hidden inside agent -> with probability epsilon take a random action, otherwise the best policy action. Penalize each step with small negative reward.
 
-Action value function Q(s,a) is found iteratively with temoporal difference using moving average with one sample (environment is deterministic): Q(s,a) = alpha * (r(s,a) + gamma * v(s')) + (1 - alpha) * Q(s,a)
+Action value function Q(s,a) is found iteratively with temoporal difference using moving average with one sample (environment is deterministic): Q(s,a) = alpha * (r(s,a) + gamma * v(s')) + (1 - alpha) * Q(s,a).
 
 In Q-Learning algorithm value function v(s) is estimated as maximum of Q(state, action) over possible actions.
 In Expected Value SARSA algorithm value function V(s) is estimated as expected value of Q(state, action) over possible actions assuming epsilon-greedy policy.
