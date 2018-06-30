@@ -7,7 +7,7 @@ Action value function Q(s,a) is found iteratively with temoporal difference usin
 In Q-Learning algorithm value function v(s) is estimated as maximum of Q(state, action) over possible actions.
 In Expected Value SARSA algorithm value function V(s) is estimated as expected value of Q(state, action) over possible actions assuming epsilon-greedy policy.
 
-Different approaches leads to different optimal paths. While Q-Learning (see below on the right side) will prefer the fastest and often more dangerous (do not mind how close to negative rewards we move as long as there is optimistic scenario of happy ending) way to recieve biggest reward, Expected Value SARSA (see below on the left side) will propose more safer (avoid negative rewards, move as far as possible) road as the best one.
+Different approaches leads to different optimal paths. While Q-Learning (see below on the left side) will prefer the fastest and often more dangerous (do not mind how close to negative rewards we move as long as there is optimistic scenario of happy ending) way to recieve biggest reward, Expected Value SARSA (see below on the right side) will propose more safer (avoid negative rewards, move as far as possible) road as the best one.
 
 <img src="https://github.com/WojciechMormul/rl-grid-world/blob/master/imgs/1.png" width="300">
 <img src="https://github.com/WojciechMormul/rl-grid-world/blob/master/imgs/2.png" width="300">
