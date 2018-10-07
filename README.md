@@ -12,15 +12,4 @@ In Expected Value SARSA algorithm value function V(s) is estimated as expected v
 Different approaches lead to different optimal paths. While Q-Learning (see below on the left side) will prefer the fastest and often more dangerous (do not mind how close to negative rewards we move as long as there is optimistic scenario of happy ending) way to recieve biggest reward, Expected Value SARSA (see below on the right side) will propose safer (avoid negative rewards, move as far from them as possible) path as the best one.
 
 <img src="https://github.com/WojciechMormul/rl-grid-world/blob/master/imgs/1.png" width="300">
-<img src="https://github.com/WojciechMormul/rl-grid-world/blob/master/imgs/2.png" width="300">
 <img src="https://github.com/WojciechMormul/rl-grid-world/blob/master/imgs/4.png" width="500">
-<img src="https://github.com/WojciechMormul/rl-grid-world/blob/master/imgs/3.png" width="620">
-<img src="https://github.com/WojciechMormul/rl-grid-world/blob/master/imgs/5.png" width="500">
-
-
-
-
-
-
-
-
